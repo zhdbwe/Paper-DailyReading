@@ -27,3 +27,12 @@
 创新点主要有两点：
 1. 和其他预训练模型不同，本模型同时使用了encoder(双向用于编码信息)和decoder(单向用于生成任务),好像和原始的transformer也没有什么区别
 2. 提出了不同的掩码和变换方式,包括了Token masking ,token deletion, text infilling, sentence permutation, document rotation
+
+2019-11-18
+
+[Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context](https://arxiv.org/pdf/1901.02860.pdf) arxiv
+
+本论文对原始Transformer模型只能编码固定长度的数据进行改进(Vaswani Transformer -> Universal Transformer -> Transformer-XL)
+
+1. 使用RNN的思想，将前面的状态作为历史信息输入到下一个时间步，和RNN不同的地方在于他不是在同一层输入历史信息，而是利用了上一层的历史信息
+2. 使用了相对位置编码，防止绝对位置编码时，两个不同的Block的同一位置不能区分。

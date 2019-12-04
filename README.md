@@ -1,4 +1,3 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 # Paper-DailyReading
 
 Dataset: 
@@ -62,7 +61,7 @@ Dataset:
 
 [Explicit Sparse Transformer: Concentrated Attention Through Explicit Selection](https://openreview.net/forum?id=Hye87grYDH)
 
-本文主要是让注意力更集中，实现方法，直接在每次注意力之后 \\(frac{QK^T}{\sqrt{d}}\\) 注意力权重只取top-k, k为超参数。
+本文主要是让注意力更集中，实现方法，直接在每次注意力之后 ![](http://latex.codecogs.com/gif.latex?\\frac{QK^T}{\sqrt{d}}) 注意力权重只取top-k, k为超参数。
 
 2019-11-27
 
